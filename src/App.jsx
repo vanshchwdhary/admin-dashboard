@@ -61,13 +61,15 @@ function App() {
     >
       <div
         style={{
-          maxWidth: "1100px",
+          width: "100%",
+          maxWidth: "1400px",
           margin: "0 auto",
           background: "#ffffff",
           borderRadius: "18px",
           padding: "20px 20px 16px",
           boxShadow: "0 20px 45px rgba(15,23,42,0.12)",
           border: "1px solid #e5e7eb",
+          minHeight: "85vh"
         }}
       >
         <header

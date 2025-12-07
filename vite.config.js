@@ -1,7 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite"
+import react from "@vitejs/plugin-react"
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/",
+
+  // 👇 This embeds your backend API URL into the build
+  define: {
+    "import.meta.env.VITE_API_BASE_URL": JSON.stringify(
+      "https://contact-backend-v7b0.onrender.com"
+    ),
+  },
 })
